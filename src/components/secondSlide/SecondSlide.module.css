@@ -1,0 +1,28 @@
+.wrapper {
+    background-image: url("../../assets/img/2slide/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+  }
+  .title{
+      text-transform: uppercase;
+      padding-top: 15vh;
+      font-size: 40px;
+  }
+
+  .textBlock {
+    padding: 15vh 15vw 0 15vw;
+  }
+
+  .text{
+    background-color: rgb(94, 88, 88);
+    border-radius: 100px ;
+    font-size: 30px;
+    padding: 20px 60px;
+    max-width: 600px;
+    max-height: 300px;
+    text-transform: uppercase;
+    overflow-y: scroll;
+  }

@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useSwipeable } from "react-swipeable";
 import cl from "./Carousel.module.css";
 import { slideNext, slidePrev } from "../../store/carouselSlice";
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children, width, height }) => {
   return (
-    <div className={cl.carouselItem} style={{ width: width }}>
+    <div className={cl.carouselItem} style={{ width: width, height: height }}>
       {children}
     </div>
   );
@@ -26,7 +26,7 @@ const Carusel = ({ children }) => {
         style={{ transform: `translateX(-${newUpdate * 100}%)` }}
       >
         {React.Children.map(children, (child, index) =>
-          React.cloneElement(child, { width: "100vw" })
+          React.cloneElement(child, { width: "100vw", height: "100vh" })
         )}
       </div>
     </div>

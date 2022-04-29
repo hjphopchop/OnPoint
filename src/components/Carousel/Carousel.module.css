@@ -1,10 +1,33 @@
 .carousel {
-  overflow: hidden;
+    overflow:hidden;
+    margin-top: 0;
+    
+    
+   
+    
+   
+    
 }
 
-.inner {
-  display: flex;
-  transition: transform 0.3s;
+.inner{
+    display: flex;
+    
+   
+    transition: transform 0.3s;
+    
+    
+   
+   
+    
+    
+    
+    
+
+
 }
+
 .carouselItem {
+    background-color: pink;
+   
+   
 }
