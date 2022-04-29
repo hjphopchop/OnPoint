@@ -1,0 +1,17 @@
+.carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.4s;
+}
+
+.carouselItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(75, 77, 235);
+  color: black;
+}
