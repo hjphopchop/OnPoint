@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useSwipeable } from "react-swipeable";
 import cl from "./Carousel.module.css";
-
+import { slideNext, slidePrev } from "../../store/carouselSlice";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div className={cl.carouselItem} style={{ width: width }}>
@@ -9,23 +10,12 @@ export const CarouselItem = ({ children, width }) => {
     </div>
   );
 };
-
 const Carusel = ({ children }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const updateIndex = (newIndex) => {
-    if (newIndex < 0) {
-      newIndex = 0;
-    } else if (newIndex >= React.Children.count(children)) {
-      newIndex = React.Children.count(children) - 1;
-    }
-
-    setActiveIndex(newIndex);
-  };
-
+  const newUpdate = useSelector((state) => state.carousell.value);
+  const dispatch = useDispatch();
   const handlers = useSwipeable({
-    onSwipedLeft: () => updateIndex(activeIndex + 1),
-    onSwipedRight: () => updateIndex(activeIndex - 1),
+    onSwipedLeft: () => dispatch(slideNext()),
+    onSwipedRight: () => dispatch(slidePrev()),
     preventScrollOnSwipe: true,
     trackMouse: true,
   });
@@ -33,7 +23,7 @@ const Carusel = ({ children }) => {
     <div {...handlers} className={cl.carousel}>
       <div
         className={cl.inner}
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        style={{ transform: `translateX(-${newUpdate * 100}%)` }}
       >
         {React.Children.map(children, (child, index) =>
           React.cloneElement(child, { width: "100vw" })
