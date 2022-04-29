@@ -39,11 +39,6 @@ const Carusel = ({ children }) => {
           React.cloneElement(child, { width: "100vw" })
         )}
       </div>
-
-      <div>
-        <button onClick={() => updateIndex(activeIndex - 1)}> nazaad</button>
-        <button onClick={() => updateIndex(activeIndex + 1)}> dalee</button>
-      </div>
     </div>
   );
 };
