@@ -4,10 +4,13 @@ import cl from "./Slide3.module.css";
 import bottle from "../../assets/img/3slide/bottle.png";
 import plate from "../../assets/img/3slide/icon1.png";
 import calendar from "../../assets/img/3slide/icon2.png";
+import Navbar from "../navbar/Navbar";
 
 const Slide3 = () => {
   return (
     <div className={cl.wrapper}>
+        <div className={cl.content}>
+        <Navbar/>
       <h2>Brand XY</h2>
 
     <div className={cl.textItems}>
@@ -37,6 +40,7 @@ const Slide3 = () => {
       <img className={cl.bottleImg} src={bottle}></img>
 
       <BasicButton>Подробнее</BasicButton>
+      </div>
     </div>
   );
 };

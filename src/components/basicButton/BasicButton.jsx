@@ -1,14 +1,12 @@
-import React from 'react'
-import cl from "./BasicButton.module.css"
+import React from "react";
+import cl from "./BasicButton.module.css";
 
-const BasicButton = ({children, buttonClick}) => {
+const BasicButton = ({ children, buttonClick, styles }) => {
   return (
-    
-    <button onClick = {() =>buttonClick()} className={cl.button}>
-        {children}
+    <button onClick={() => buttonClick()} className={styles}>
+      {children}
     </button>
-    
-  )
-}
+  );
+};
 
-export default BasicButton
+export default BasicButton;

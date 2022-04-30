@@ -25,9 +25,13 @@ export const carouselSlice = createSlice({
       }
       state.value = state.value - 1;
     },
+
+    slideHome: (state) => {
+        state.value = 0
+    }
   },
 });
 
-export const { slideNext, slidePrev } = carouselSlice.actions;
+export const { slideNext, slidePrev, slideHome } = carouselSlice.actions;
 
 export default carouselSlice.reducer;

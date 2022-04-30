@@ -5,7 +5,12 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    position: relative;
   }
+
+  .content{
+    padding: 0 70px;
+}
   .title{
       text-transform: uppercase;
       padding-top: 15vh;
