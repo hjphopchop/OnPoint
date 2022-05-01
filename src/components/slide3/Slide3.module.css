@@ -21,22 +21,53 @@
 
   .textItems{
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
+      align-items: stretch;
+      
+      padding: 40vh 2vw 0 2vw;
+
+      font-size: 20px;
+  }
+
+  .rightBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    
+   
   }
   
-  .textBlock {
-    padding: 15vh 15vw 0 15vw;
+  .textBlock1 {
+    padding: 50px 30px 50px 250px;
+    border-radius: 40px ;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    
+    margin-right: 5vw;
+
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    
+  }
+  .textBlock2 {
+    padding: 50px 30px 50px 40px;
+    border-radius: 40px ;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   }
 
   .text{
-      position: relative;
-    background-color: rgb(94, 88, 88);
-    border-radius: 100px ;
-    font-size: 20px;
-    padding: 50px 10px 20px 80px;
-    max-width: 300px;
+     max-width: 200px;
+   
     
-    text-transform: uppercase;
+    
+
     
   }
 
@@ -49,8 +80,21 @@
   }
 
   .bottleImg{
-      width: 90%;
-      height: auto;
+      width: auto;
+      height: 90%;
       position: absolute;
-      bottom: 0;
+      bottom: 0px;
+      left: 0;
+  }
+
+  .buttonNext {
+    
+    text-align: center;
+    background-color: #ff6aa0;
+    font-size: 30px;
+    padding: 5px 20px;
+    padding-left: 10px;
+    margin-top: 5vh;
+    border-radius: 100px !important;
+    
   }

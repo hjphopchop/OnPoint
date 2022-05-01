@@ -11,35 +11,39 @@ const Slide3 = () => {
     <div className={cl.wrapper}>
         <div className={cl.content}>
         <Navbar/>
+        <p>Ключевое сообщение</p>
       <h2>Brand XY</h2>
 
     <div className={cl.textItems}>
-    <div className={cl.textBlock}>
+    <div className={cl.textBlock1}>
         <div className={cl.text}>
-          <p className={cl.text}>
+          <p>
             Lorem ipsum debitis nisi placeat sapiente aliquid repellendus fuga.
             Est veniam, fuga, accus{" "}
           </p>
           <img className={cl.textBlockImg} src={plate}></img>
         </div>
       </div>
-
-      <div className={cl.textBlock}>
+      <div className={cl.rightBlock}>
+      <div className={cl.textBlock2}>
         <div className={cl.text}>
-          <p className={cl.text}>
-            Lorem ipsum debitis nisi placeat sapiente aliquid repellendus fuga.
-            Est veniam, fuga, accus{" "}
+          <p>
+            Lorem ipsum debitis  fuga.
+           
           </p>
           <img className={cl.textBlockImg} src={calendar}></img>
         </div>
       </div>
+      <BasicButton styles={cl.buttonNext}>Подробнее</BasicButton>
+      </div>
+      
     </div>
       
 
       
       <img className={cl.bottleImg} src={bottle}></img>
 
-      <BasicButton>Подробнее</BasicButton>
+      
       </div>
     </div>
   );

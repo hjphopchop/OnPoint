@@ -21,6 +21,7 @@
   text-transform: uppercase;
   font-size: 95px;
   margin-top: 3vh;
+  font-weight: 300;
 
   position: relative;
 }
@@ -41,8 +42,8 @@
   padding: 5px 20px;
   padding-left: 10px;
   border-radius: 100px !important;
-  bottom: 10px;
-  right: 50px;
+  bottom: 15px;
+  right: 0px;
 }
 
 .pipe {
@@ -54,14 +55,14 @@
 
 .bigSperm {
   position: absolute;
-  top: 220px;
-  right: 120px;
+  top: 200px;
+  right: 100px;
   width: 500px;
 }
 .smallSperm {
   position: absolute;
   bottom: -10px;
-  left: 30px;
+  left: 0px;
   width: 300px;
 }
 
@@ -121,7 +122,7 @@
   }
 
   75% {
-    transform: translate(100%, -70%) rotate(270deg);
+    transform: translate(20%, -70%) rotate(270deg);
   }
   100% {
     transform: translate(0, 0) rotate(360deg);

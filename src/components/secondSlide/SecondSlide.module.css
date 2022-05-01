@@ -1,33 +1,62 @@
 .wrapper {
-    background-image: url("../../assets/img/2slide/bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-  }
-
-  .content{
-    padding: 0 70px;
+  background-image: url("../../assets/img/2slide/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
-  .title{
-      text-transform: uppercase;
-      padding-top: 15vh;
-      font-size: 40px;
-  }
 
-  .textBlock {
-    padding: 15vh 15vw 0 15vw;
-  }
+.content {
+  padding: 0 70px;
+}
+.title {
+  text-transform: uppercase;
+  padding-top: 10vh;
+  font-size: 30px;
+  width: 100px;
+  font-weight: 400;
+}
+.textBlockWrap {
+  overflow-y: scroll;
+  transform: scaleX(-1);
+  height: 400px;
+  
+  margin-top: 5vh;
+  
 
-  .text{
-    background-color: rgb(94, 88, 88);
-    border-radius: 100px ;
-    font-size: 30px;
-    padding: 20px 60px;
-    max-width: 600px;
-    max-height: 300px;
-    text-transform: uppercase;
-    overflow-y: scroll;
-  }
+}
+.textBlock {
+  transform: scaleX(-1);
+  padding: 2vh 2vw;
+  border-radius: 30px;
+  background-color: white;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  
+  width: 70vw;
+  margin: 0 auto;
+
+  
+}
+
+.textBlockWrap::-webkit-scrollbar {
+  width: 30px;
+  height: 60px;
+  position: absolute;
+
+  background-color: rgba(24, 24, 24, 0);
+}
+.textBlockWrap::-webkit-scrollbar-thumb {
+  background-color: #ff6aa0;
+  border-radius: 50px;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 300;
+  padding: 10px 10px;
+}
